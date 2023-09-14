@@ -11,6 +11,10 @@ import {
 } from "react-icons/ai";
 import { SiBento } from "react-icons/si";
 import { useState, useEffect } from "react";
+import img1 from "../assets/images/img1.webp"
+import img2 from "../assets/images/img2.webp"
+import img3 from "../assets/images/img3.webp"
+import img4 from "../assets/images/img4.webp"
 
 export default function Menu() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -25,19 +29,19 @@ export default function Menu() {
 
   const imgs = [
     {
-      src: "src/assets/images/img1.webp",
+      src: img1,
       alt: "image 1",
     },
     {
-      src: "src/assets/images/img2.webp",
+      src: img2,
       alt: "image 2",
     },
     {
-      src: "src/assets/images/img3.webp",
+      src: img3,
       alt: "image 3",
     },
     {
-      src: "src/assets/images/img4.webp",
+      src: img4,
       alt: "image 4",
     },
   ];
