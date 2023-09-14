@@ -25,19 +25,19 @@ export default function Menu() {
 
   const imgs = [
     {
-      src: "../src/assets/images/img1.webp",
+      src: "src/assets/images/img1.webp",
       alt: "image 1",
     },
     {
-      src: "../src/assets/images/img2.webp",
+      src: "src/assets/images/img2.webp",
       alt: "image 2",
     },
     {
-      src: "../src/assets/images/img3.webp",
+      src: "src/assets/images/img3.webp",
       alt: "image 3",
     },
     {
-      src: "../src/assets/images/img4.webp",
+      src: "src/assets/images/img4.webp",
       alt: "image 4",
     },
   ];
