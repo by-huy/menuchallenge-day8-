@@ -1,8 +1,16 @@
+import { useState, useEffect } from "react";
+
+// framer motion & animation imports
 import { motion } from "framer-motion";
 import { menuAnimation } from "../utils/MenuAnimation";
 import { masking, translate, staggerContainer, width } from "../utils/MenuNav";
 import { opacity } from "../utils/OpacityAnimation";
+import Magnetic from "./Magnetic";
+
+
+// Icons Import
 import { PiArrowRightLight } from "react-icons/pi";
+
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -10,7 +18,8 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { SiBento } from "react-icons/si";
-import { useState, useEffect } from "react";
+
+// Image imports
 import img1 from "../assets/images/img1.webp"
 import img2 from "../assets/images/img2.webp"
 import img3 from "../assets/images/img3.webp"
@@ -168,21 +177,31 @@ export default function Menu() {
           >
             <p>Follow me on social media</p>
             <div className="flex gap-x-7">
-              <a href="https://www.instagram.com/huyngxyz/">
-                <AiFillInstagram opacity="90%" color="#342D32" size={28} />
-              </a>
-              <a href="https://www.linkedin.com/in/huyngxyz">
-                <AiFillLinkedin opacity="90%" color="#342D32" size={28} />
-              </a>
-              <a href="https://github.com/huyngxyz">
-                <AiFillGithub opacity="90%" color="#342D32" size={28} />
-              </a>
-              <a href="https://www.youtube.com/channel/UCBOAB9RV647G93GxLhEXleA">
-                <AiFillYoutube opacity="90%" color="#342D32" size={28} />
-              </a>
-              <a href="https://www.bento.me/huyng">
-                <SiBento opacity="90%" color="#342D32" size={28} />
-              </a>
+              <Magnetic>
+                <a href="https://www.instagram.com/huyngxyz/">
+                  <AiFillInstagram opacity="90%" color="#342D32" size={28} />
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a href="https://www.linkedin.com/in/huyngxyz">
+                  <AiFillLinkedin opacity="90%" color="#342D32" size={28} />
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a href="https://github.com/huyngxyz">
+                  <AiFillGithub opacity="90%" color="#342D32" size={28} />
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a href="https://www.youtube.com/channel/UCBOAB9RV647G93GxLhEXleA">
+                  <AiFillYoutube opacity="90%" color="#342D32" size={28} />
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a href="https://www.bento.me/huyng">
+                  <SiBento opacity="90%" color="#342D32" size={28} />
+                </a>
+              </Magnetic>
             </div>
           </motion.div>
 
