@@ -39,17 +39,18 @@ export const masking = {
 }
 
 export const staggerContainer = { 
-  hidden: {
-  },
   show: {
     transition: {
-      staggerChildren: 0.05,
+      staggerChildren: 0.5,
       ease: [0.87, 0, 0.13, 1],
     }
   },
+  hidden: {
+  },
+  
   exit: {
     transition: {
-      staggerChildren: 0.05,
+      staggerChildren: 0.075,
       ease: [0.87, 0, 0.13, 1],
     }
   }
